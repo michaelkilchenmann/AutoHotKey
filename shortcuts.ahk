@@ -572,7 +572,7 @@ return
 SendInput can you offer
 return
 
-::-m::
+::-m-::
 run, "C:\SRDEV\B_Bash\get_REPO_PX.bat"
 return
 

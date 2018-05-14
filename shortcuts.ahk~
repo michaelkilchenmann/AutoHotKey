@@ -56,7 +56,7 @@ return
 IfWinExist, Apex Collateral
 {
     WinActivate 
-ResizeWin(2000, 1500, 1672, 0)
+; ResizeWin(2000, 1500, 1672, 0)
 }
 ; 	ResizeWin(1696, 1066, 1672, 0)
 ;IfWinExist, Alert

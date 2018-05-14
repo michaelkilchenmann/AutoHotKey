@@ -1,2 +1,2 @@
-# HotKey MANIA
+# AutoHotkey scripts
 
