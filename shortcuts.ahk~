@@ -53,10 +53,11 @@ run, "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Office 2013
 return    
 
 ^Numpad2::
-IfWinExist, Apex Enterprise
+IfWinExist, Apex Collateral
+{
     WinActivate 
 ResizeWin(2000, 1500, 1672, 0)
-WinMaximize A
+}
 ; 	ResizeWin(1696, 1066, 1672, 0)
 ;IfWinExist, Alert
 ;    WinActivate
@@ -428,12 +429,12 @@ IfWinExist, AAA Rich's  Favourite
     WinActivate, AAA Rich's  Favourite
 	ResizeWin(1283,1005, 397, 1)	
 }
-IfWinExist, Apex Enterprise 15.1.62
+IfWinExist, Apex Collateral
 {
-	WinActivate  Apex Enterprise 15.1.62
+	WinActivate  Apex Collateral
 ;	ResizeWin(1696, 1050, 1672, 1)
 	ResizeWin(1685, 1050, 1680, 1)
-	WinWait, Apex Enterprise 15.1.62
+	WinWait, Apex Collateral 16.2.96.SRE.2
 	WinMaximize
 }
 IfWinExist, IB - All chats
@@ -759,6 +760,15 @@ return
 
 ::/77::
 SetTitleMatchMode, 2
-IfWinExist ahk_exe WFICA32.EXE
+IfWinExist ahk_exe pycharm64.exe
     WinActivate ahk_exe pycharm64.exe
+return
+
+::-ttt::
+run, "C:\SRDEV\B_Bash\repo_tx.bat"
+return
+
+::/tw::
+IfWinExist, TW
+    WinActivate 
 return
