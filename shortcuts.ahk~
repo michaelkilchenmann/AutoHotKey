@@ -317,6 +317,7 @@ return
 ; LEFT CLICK
 ::fjf::
 MouseClick, left
+MsgBox The backup process has completed.
 return
 
 ::/a1::
