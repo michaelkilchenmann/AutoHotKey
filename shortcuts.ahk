@@ -404,7 +404,8 @@ ResizeWin(350,1005, 1, 1)
 return
 
 ::/t2::
-ResizeWin(1283,1005, 397, 1)
+;ResizeWin(1283,1005, 385, 0)
+WinMove, AAA Rich's  Favourite, , 385, 0, 1335, 767
 return
 
 ; width height x y
@@ -575,11 +576,11 @@ return
 SendInput mine pls
 return
 
-::- ::
+::-bid ::
 SendInput can you bid
 return
 
-::-f::
+::-offer::
 SendInput can you offer
 return
 
