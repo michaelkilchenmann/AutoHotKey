@@ -411,7 +411,7 @@ return
 ; width height x y
 ::/t3::
 ;ResizeWin(1283,1005, 385, 0)
-WinMove, T+30, , 385, 698, 1335, 636
+WinMove, T+30, , 385, 698, 1335, 70
 return
 
 ; width height x y
@@ -428,6 +428,12 @@ return
 ::/bf::
 ResizeWin(2544,516, 1000, 500)
 return
+
+; Excel Window Position 1
+::--ex1::
+WinMove, A, , 390, 0, 3050, 1400
+return
+
 
 ^!NumpadSub::
 SetTitleMatchMode, 2
