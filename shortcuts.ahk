@@ -319,6 +319,14 @@ return
 MouseClick, left
 return
 
+::/otc::
+SetTitleMatchMode, 2
+IfWinExist, Apex Enterprise
+	WinActivate
+CoordMode, Mouse, Screen
+mouseclick, left, 1858, 62,
+Return
+
 ::/a1::
 SetTitleMatchMode, 2
 IfWinExist, Apex Enterprise
