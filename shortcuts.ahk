@@ -234,6 +234,12 @@ IfWinExist, ID
 	WinActivate
 return
 
+::/cc::
+SetTitleMatchMode, 2
+IfWinExist, Close Repo Trade
+	WinActivate
+return
+
 ::/00::
 SetTitleMatchMode, 2
 IfWinExist, OneNote
@@ -371,14 +377,24 @@ return
 SetTitleMatchMode, 2
 IfWinExist, Apex Enterprise
 	WinActivate
-MouseClick, right, 103, 289
+CoordMode, Mouse, Screen
+MouseClick, right, 1778, 340
 return 
 
 ::/l3::
 SetTitleMatchMode, 2
 IfWinExist, Apex Enterprise
 	WinActivate
-MouseClick, right, 103, 306
+CoordMode, Mouse, Screen
+MouseClick, right, 1778, 360
+return 
+
+::/l4::
+SetTitleMatchMode, 2
+IfWinExist, Apex Enterprise
+	WinActivate
+CoordMode, Mouse, Screen
+MouseClick, right, 1778, 380
 return 
 
 ::/s::
@@ -415,7 +431,7 @@ return
 
 
 ::/t1::
-ResizeWin(350,1005, 1, 1)
+ResizeWin(395,1400, 1, 1)
 return
 
 ::/t2::
