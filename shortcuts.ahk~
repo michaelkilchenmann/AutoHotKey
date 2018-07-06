@@ -238,6 +238,19 @@ return
 SetTitleMatchMode, 2
 IfWinExist, Close Repo Trade
 	WinActivate
+return
+
+::/fi::
+SetTitleMatchMode, 2
+IfWinExist, Financial Instruments
+	WinActivate
+return
+
+^!NumpadSub::
+SetTitleMatchMode, 2
+IfWinExist, Financial Instruments
+	WinActivate
+return
 
 ::/00::
 SetTitleMatchMode, 2
@@ -465,38 +478,38 @@ WinMove, A, , 390, 0, 3050, 1400
 return
 
 
-^!NumpadSub::
-SetTitleMatchMode, 2
-IfWinExist, Cash Management
-{
-{
-    WinActivate
-	ResizeWin(1283,640, 397, 370)
-}
-IfWinExist, AAA Rich's  Favourite
-{
-    WinActivate, AAA Rich's  Favourite
-	ResizeWin(1283,1005, 397, 1)	
-}
-IfWinExist, Apex Collateral
-{
-	WinActivate  Apex Collateral
-;	ResizeWin(1696, 1050, 1672, 1)
-	ResizeWin(1685, 1050, 1680, 1)
-	WinWait, Apex Collateral 16.2.96.SRE.2
-	WinMaximize
-}
-IfWinExist, IB - All chats
-{
-	WinActivate  IB - All chats
-	ResizeWin(740,1050, 3360, 1)
-}
-IfWinExist, Apex Enterprise 15.1.62
-{
-}
-return
-}
-return
+; ^!NumpadSub::
+;SetTitleMatchMode, 2
+;IfWinExist, Cash Management
+;{
+;{
+;    WinActivate
+;	ResizeWin(1283,640, 397, 370)
+;}
+;IfWinExist, AAA Rich's  Favourite
+;{
+;    WinActivate, AAA Rich's  Favourite
+;	ResizeWin(1283,1005, 397, 1)	
+;}
+;IfWinExist, Apex Collateral
+;{
+;	WinActivate  Apex Collateral
+;;	ResizeWin(1696, 1050, 1672, 1)
+;	ResizeWin(1685, 1050, 1680, 1)
+;	WinWait, Apex Collateral 16.2.96.SRE.2
+;	WinMaximize
+;}
+;IfWinExist, IB - All chats
+;{
+;	WinActivate  IB - All chats
+;	ResizeWin(740,1050, 3360, 1)
+;}
+;IfWinExist, Apex Enterprise 15.1.62
+;{
+;}
+;return
+;}
+;return
 
 ; ALWAYS ON TOP ----------------------------------------------------------------
 ; ^SPACE::  Winset, Alwaysontop, , A
