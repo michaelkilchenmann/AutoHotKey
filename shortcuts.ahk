@@ -240,8 +240,14 @@ IfWinExist, Close Repo Trade
 	WinActivate
 return
 
-::/fi::
+::/cl::
 SetTitleMatchMode, 2
+IfWinExist, Close Loan
+	WinActivate
+return
+
+::/fi::
+settitlematchmode, 2
 IfWinExist, Financial Instruments
 	WinActivate
 return
@@ -441,7 +447,6 @@ return
 ^WheelDown::WheelRight
 ^WheelUp::WheelLeft
 
-
 ::/t1::
 ResizeWin(395,1400, 1, 1)
 return
@@ -449,6 +454,11 @@ return
 ::/t2::
 ;ResizeWin(1283,1005, 385, 0)
 WinMove, AAA Rich's  Favourite, , 385, 0, 1335, 767
+return
+
+::/t2b::
+;ResizeWin(1283,1005, 385, 0)
+ResizeWin(1335, 1400, 389, 0)
 return
 
 ; width height x y
