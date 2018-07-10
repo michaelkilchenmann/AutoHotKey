@@ -458,7 +458,7 @@ return
 
 ::/t2b::
 ;ResizeWin(1283,1005, 385, 0)
-ResizeWin(1335, 1331, 389, 0)
+ResizeWin(1335, 1400, 389, 0)
 return
 
 ; width height x y
