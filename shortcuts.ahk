@@ -215,6 +215,23 @@ return
 SendInput HiHi
 return
 
+::coffer2::
+SendInput can you offer T+2 / open
+return
+
+::coffer1::
+SendInput can you offer T+1 / open
+return
+
+::cbid2::
+SendInput can you bid T+2 / open
+return
+
+::coffer1::
+SendInput can you bid T+1 / open
+return
+
+
 ; ------------------------------------------------------------------------------------------------
 
 ::/acc::
