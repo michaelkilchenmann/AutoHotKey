@@ -108,7 +108,7 @@ if not ErrorLevel
 }
 return
 
-::/leo::
+::/lll::
 InputBox, SearchTerm, Search Leo,Search:
 if not ErrorLevel
 {
@@ -638,7 +638,7 @@ SetTitleMatchMode, 2
 IfWinExist laser
     WinActivate laser
 else
-run, \\CHRB1025.CORP.GWPNET.COM\homes\7\S3QH78\Documents\L_Laser\mk_laser_v3.jar
+run, \\CHRB1025.CORP.GWPNET.COM\homes\7\S3QH78\Documents\L_Laser\mk_laser_v4.jar
 return  
 
 ::-3-::
