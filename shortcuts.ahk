@@ -183,6 +183,12 @@ IfWinExist, TweetDeck - Google Chrome
     WinActivate
 return
 
+^!Numpad6::
+SetTitleMatchMode, 2
+IfWinExist, ahk_class MozillaWindowClass
+    WinActivate
+return
+
 ; Mixed Hotkeys
 
 ^+e::

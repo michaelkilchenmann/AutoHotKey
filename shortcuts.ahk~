@@ -108,7 +108,7 @@ if not ErrorLevel
 }
 return
 
-::/leo::
+::/lll::
 InputBox, SearchTerm, Search Leo,Search:
 if not ErrorLevel
 {
