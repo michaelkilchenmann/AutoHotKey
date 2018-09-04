@@ -479,7 +479,8 @@ return
 ;----------------------------------------------------------------------------
 
 ::/t1::
-ResizeWin(395,1400, 1, 1)
+WinMove, TweetDeck, , 0, 0, 385,1405
+; ResizeWin(385,1405, 0, 0)
 return
 
 ::/t2::
@@ -495,7 +496,7 @@ return
 ; width height x y
 ::/t3::
 ;ResizeWin(1283,1005, 385, 0)
-WinMove, T+30, , 385, 698, 1335, 70
+WinMove, T+30, , 385, 698, 1335, 704
 return
 
 ; width height x y
