@@ -876,3 +876,7 @@ return
 IfWinExist, TW
     WinActivate 
 return
+
+::/sseur::
+MouseClick, left, -1600, -350
+return 
