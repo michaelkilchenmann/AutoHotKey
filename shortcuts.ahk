@@ -488,6 +488,12 @@ return
 WinMove, AAA Rich's  Favourite, , 385, 0, 1335, 767
 return
 
+::/t4::
+;ResizeWin(1283,1005, 385, 0)
+WinMove, The Cash Ladder, , 385, 400, 1335, 767
+return
+
+
 ::/t2b::
 ;ResizeWin(1283,1005, 385, 0)
 ResizeWin(1335, 1400, 389, 0)
