@@ -41,7 +41,7 @@ SetTitleMatchMode, 2
 IfWinExist laser v0.24.5
     WinActivate laser v0.24.5
 else
-run, \\CHRB1025.CORP.GWPNET.COM\homes\7\S3QH78\Documents\L_Laser\mk_laser_v4.jar
+run, \\CHRB1025.CORP.GWPNET.COM\homes\7\S3QH78\Documents\L_Laser\mk_laser_v5.jar
 return 
 
 ^Numpad1::

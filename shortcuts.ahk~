@@ -867,6 +867,12 @@ IfWinExist ahk_exe pycharm64.exe
     WinActivate ahk_exe pycharm64.exe
 return
 
+::/cmd::
+SetTitleMatchMode, 2
+IfWinExist ahk_exe cmd.exe
+    WinActivate ahk_exe cmd.exe
+return
+
 ::-ttt::
 run, "C:\SRDEV\B_Bash\repo_tx.bat"
 return
