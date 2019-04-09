@@ -163,6 +163,8 @@ return
 SetTitleMatchMode, 2
 IfWinExist ahk_class LyncConversationWindowClass
     WinActivate ahk_class LyncConversationWindowClass
+IfWinExist ahk_class LyncTabFrameHostWindowClass
+    WinActivate ahk_class LyncTabFrameHostWindowClass
 return
 
 ^!Numpad3::
