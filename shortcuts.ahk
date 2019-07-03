@@ -242,11 +242,6 @@ return
 
 ; ------------------------------------------------------------------------------------------------
 
-::/acc::
-IfWinExist, Cash Management
-    WinActivate
-return
-
 ::/af::
 SetTitleMatchMode, 2
 IfWinExist, Apex Enterprise
@@ -381,7 +376,7 @@ SetTitleMatchMode, 2
 IfWinExist, Apex Enterprise
 	WinActivate
 CoordMode, Mouse, Screen
-mouseclick, right, 1792, 293
+mouseclick, right, 1792, 300
 Return
 
 ::/a2::
@@ -389,7 +384,7 @@ SetTitleMatchMode, 2
 IfWinExist, Apex Enterprise
 	WinActivate
 CoordMode, Mouse, Screen
-mouseclick, right, 1792, 310
+mouseclick, right, 1792, 320
 Return
 
 ::/a3::
@@ -397,7 +392,7 @@ SetTitleMatchMode, 2
 IfWinExist, Apex Enterprise
 	WinActivate
 CoordMode, Mouse, Screen
-mouseclick, right, 1792, 325
+mouseclick, right, 1792, 335
 Return
 
 ::/a4::
@@ -405,7 +400,7 @@ SetTitleMatchMode, 2
 IfWinExist, Apex Enterprise
 	WinActivate
 CoordMode, Mouse, Screen
-mouseclick, right, 1792, 350
+mouseclick, right, 1792, 360
 Return
 
 ::/l1::
@@ -413,7 +408,7 @@ SetTitleMatchMode, 2
 IfWinExist, Apex Enterprise
 	WinActivate
 CoordMode, Mouse, Screen
-MouseClick, right, 1778, 320
+MouseClick, right, 1778, 330
 return 
 
 ::/l2::
@@ -421,7 +416,7 @@ SetTitleMatchMode, 2
 IfWinExist, Apex Enterprise
 	WinActivate
 CoordMode, Mouse, Screen
-MouseClick, right, 1778, 340
+MouseClick, right, 1778, 350
 return 
 
 ::/l3::
@@ -429,7 +424,7 @@ SetTitleMatchMode, 2
 IfWinExist, Apex Enterprise
 	WinActivate
 CoordMode, Mouse, Screen
-MouseClick, right, 1778, 360
+MouseClick, right, 1778, 370
 return 
 
 ::/l4::
@@ -437,7 +432,7 @@ SetTitleMatchMode, 2
 IfWinExist, Apex Enterprise
 	WinActivate
 CoordMode, Mouse, Screen
-MouseClick, right, 1778, 380
+MouseClick, right, 1778, 390
 return 
 
 ::/s::
@@ -462,12 +457,6 @@ IfWinExist Mozilla Firefox
     WinActivate Mozilla Firefox
 return  
 
-::/t30::
-SetTitleMatchMode, 2
-IfWinExist, T+30
-WinActivate
-return
-
 ; Shift + Wheel for horizontal scrolling
 ^WheelDown::WheelRight
 ^WheelUp::WheelLeft
@@ -481,20 +470,13 @@ return
 ;----------------------------------------------------------------------------
 
 ::/t1::
-WinMove, TweetDeck, , 0, 0, 385,1405
+WinMove, TweetDeck, , -6, 0, 389,1405
 ; ResizeWin(385,1405, 0, 0)
 return
 
 ::/t2::
 ;ResizeWin(1283,1005, 385, 0)
-WinMove, AAA Rich's  Favourite, , 385, 0, 1335, 767
-return
-
-::/tt4::
-;ResizeWin(1283,1005, 385, 0)
-SetTitleMatchMode, 2
-WinMove, The Cash Ladder, , 385, 400, 1335, 767
-WinActivate The Cash Ladder
+WinMove, AAA Rich's  Favourite, , 370, 0, 1357, 767
 return
 
 ::/e1::
@@ -504,16 +486,29 @@ ResizeWin(830, 799, 390, 600)
 ;WinActivate The Cash Ladder
 return
 
-
 ::/t2b::
 ;ResizeWin(1283,1005, 385, 0)
 ResizeWin(1335, 1400, 389, 0)
 return
 
 ; width height x y
-::/t3::
+::/t30::
 ;ResizeWin(1283,1005, 385, 0)
-WinMove, T+30, , 385, 698, 1335, 704
+WinMove, T+30, , 370, 639, 1357, 767
+WinActivate T+30
+return
+
+; width height x y
+::-scash::
+;ResizeWin(1283,1005, 385, 0)
+WinMove, The Cash Ladder, , 370, 639, 1357, 767
+WinActivate The Cash Ladder
+return
+
+::/acc::
+WinMove, Cash Management, , 370, 639, 1357, 767
+IfWinExist, Cash Management
+    WinActivate
 return
 
 ; width height x y
