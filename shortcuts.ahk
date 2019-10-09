@@ -38,8 +38,8 @@ ResizeWin(Width = 0,Height = 0, X=0, Y=0)
 
 ^Numpad0::
 SetTitleMatchMode, 2
-IfWinExist laser v0.24.5
-    WinActivate laser v0.24.5
+IfWinExist laser v0.25.1
+    WinActivate laser v0.25.1
 else
 run, \\CHRB1025.CORP.GWPNET.COM\homes\7\S3QH78\Documents\L_Laser\mk_laser_v5.jar
 return 
@@ -682,6 +682,14 @@ return
 
 ::-m-::
 run, "C:\SRDEV\B_Bash\get_REPO_PX.bat"
+return
+
+::-c-::
+run, "C:\SRDEV\B_Bash\get_isin_country.bat"
+return
+
+::-sep::
+run, "C:\SRDEV\B_Bash\sep_script.bat"
 return
 
 ^l::
